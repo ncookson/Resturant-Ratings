@@ -11,6 +11,7 @@ def restaurant_ratings(ratings_file, print_ratings):
         rest_name = rating[0]
         rest_score = int(rating[1])
         print_ratings[rest_name] = rest_score
+        sorted(print_ratings)
     print(print_ratings)
         
 restaurant_ratings(ratings_file, print_ratings)
